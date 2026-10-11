@@ -1,6 +1,6 @@
-# Phonak Audéo Sphere for Home Assistant
+# Phonak for Home Assistant
 
-Custom integration for Phonak Audéo Sphere (i90) hearing aids. One entry covers
+Custom integration for Phonak hearing aids. One entry covers
 the pair; each aid is its own device with battery, volume (per ear), program
 (switches both aids), mute and auto-on (both aids), tap control, and a
 Bluetooth-streaming switch per paired phone.
@@ -38,7 +38,7 @@ reliably. LE bonds made on the Pi earlier are harmless and can stay.
    or `adb install`). Allow nearby devices (Bluetooth) and notifications.
 4. In the app: paste the webhook URL, check the hearing aids picked ("R-Phonak
    hearing aid" / "L-Phonak hearing aid"), tap **Save & start**, then
-   **Allow running in the background**. On Samsung also check Settings → Apps →
+   **Allow running in the background**. On Samsung phone also check Settings → Apps →
    Phonak Bridge → Battery → **Unrestricted**.
 
 The app keeps a notification while it runs and restarts after a reboot.
@@ -50,13 +50,17 @@ the session; is myPhonak running?"). Close myPhonak when you're done with it
 (Recent apps → Close all, or App info → Force stop). To keep it from staying
 connected in the background, set its battery use to **Restricted**. Its links
 come back as soon as you open it again.
+`Note:` Do not open or use myPhonak app while using this integration, I've had loss of connection and issues reconnecting.
 
 ## Tested with
 `Phonak Audéo i90 Sphere by Sonova AG`
 `Samsung Android phone S26`
+`myPhonak app available on Google play
+
+My best guess is that it should work with any of the newer Sphere or Lumity lines of hearing aids.
 I have no way of testing any other Phonak hearing aids nor any other Android phones with this integration. 
 
 ## Background
 I used this approach (Phonak bridge on Android phone) because you can use this integration at all times when you have your phone with you.  
-If you went the route of having the integration handle the bluetooth connections you would need to be within range of your Home assistant bluetooth
+If you went the design route of having the integration handle the bluetooth connections you would need to be within range of your Home assistant bluetooth
 controller. This would limit the usefulness severely.   
