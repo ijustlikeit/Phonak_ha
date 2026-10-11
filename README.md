@@ -54,7 +54,7 @@ come back as soon as you open it again.
 ## Tested with
 `Phonak Audéo i90 Sphere by Sonova AG`
 `Samsung Android phone S26`
-`myPhonak app available on Google play
+`myPhonak app available on Google play`
 
 My best guess is that it should work with any of the newer Sphere or Lumity lines of hearing aids.
 I have no way of testing any other Phonak hearing aids nor any other Android phones with this integration. 
