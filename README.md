@@ -6,8 +6,7 @@ the pair; each aid is its own device with battery, volume (per ear), program
 Bluetooth-streaming switch per paired phone.
 
 ## How it works
-Home Assistant doesn't talk to the aids. The **Phonak Bridge** Android app (in
-`android/`, built APK in `dist/`) does, from the phone that is already paired
+Home Assistant doesn't talk to the aids. The **Phonak Bridge** Android app built APK in `dist/`) does, from the phone that is already paired
 with them:
 
 ```
