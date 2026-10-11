@@ -1,0 +1,14 @@
+{
+  "domain": "phonak",
+  "name": "Phonak Hearing Aids",
+  "codeowners": [],
+  "config_flow": true,
+  "dependencies": [
+    "webhook"
+  ],
+  "documentation": "https://github.com/your-user/phonak-ha",
+  "integration_type": "device",
+  "iot_class": "local_push",
+  "requirements": [],
+  "version": "0.4.1"
+}
