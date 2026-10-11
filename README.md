@@ -37,7 +37,7 @@ reliably.
    or `adb install`). Allow nearby devices (Bluetooth) and notifications.
 4. In the app: paste the webhook URL, check the hearing aids picked ("R-Phonak
    hearing aid" / "L-Phonak hearing aid"), tap **Save & start**, then
-   **Allow running in the background**. On Samsung phone also check Settings → Apps →
+   **Allow running in the background**. On Samsung (or other Android)  phone also check Settings → Apps →
    Phonak Bridge → Battery → **Unrestricted**.
 
 The app keeps a notification while it runs and restarts after a reboot.
