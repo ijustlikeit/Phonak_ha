@@ -22,9 +22,9 @@ hearing aids ⇄ (Bluetooth LE, Sonova protocol) ⇄ Phonak Bridge on the phone 
 - It works wherever the phone is, as long as the phone can reach Home Assistant
   (use your external URL, e.g. Nabu Casa, for outside your home network).
 
-The Pi's own Bluetooth isn't used any more: the aids only advertise rarely while
-the phone is connected, and the Pi can't resolve their private addresses
-reliably. LE bonds made on the Pi earlier are harmless and can stay.
+The Pi's (or whatever you use for Home assistant) own Bluetooth isn't used any more: the aids only advertise rarely while
+the phone is connected, and the Pi (again whatever you use for Home Assistant) can't resolve their private addresses
+reliably. 
 
 ## Install
 1. Copy `dist/custom_components/phonak` to `/config/custom_components/phonak`
