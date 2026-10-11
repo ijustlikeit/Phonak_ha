@@ -51,20 +51,12 @@ the session; is myPhonak running?"). Close myPhonak when you're done with it
 connected in the background, set its battery use to **Restricted**. Its links
 come back as soon as you open it again.
 
-## Testing the app without Home Assistant
-`tools/bridge_test_server.py` is a stand-in webhook on the PC that prints the
-reports and can hand out commands:
+## Tested with
+`Phonak Audéo i90 Sphere by Sonova AG`
+`Samsung Android phone S26`
+I have no way of testing any other Phonak hearing aids nor any other Android phones with this integration. 
 
-```
-py -3.14 tools/bridge_test_server.py --port 8765
-adb reverse tcp:8765 tcp:8765
-# webhook URL in the app: http://127.0.0.1:8765/api/webhook/test
-adb logcat -s PhonakBridge GattLink AidSession
-```
-
-## Building the app
-JDK 17 and the Android SDK (platform 36, build-tools 37) in
-`%LOCALAPPDATA%\Android\Sdk`; `android/local.properties` points there. Then
-`cd android` and `gradlew assembleRelease testDebugUnitTest`. The protocol code
-(`Protocol.kt`) is a port of `tools/protocol.py`; `ProtocolTest` checks it
-against vectors from the Python version and the myPhonak capture.
+## Background
+I used this approach (Phonak bridge on Android phone) because you can use this integration at all times when you have your phone with you.  
+If you went the route of having the integration handle the bluetooth connections you would need to be within range of your Home assistant bluetooth
+controller. This would limit the usefulness severely.   
